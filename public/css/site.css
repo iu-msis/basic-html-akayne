@@ -1,0 +1,25 @@
+
+.bg{
+  background-color:rgb(110,130,145);
+  font-size: 22px;
+  font-family:monospace;
+  color: black;
+}
+a{
+  color: yellow;
+}
+img{
+  width:200px;
+}
+h1,h2,h3{
+  color: purple;
+}
+
+.bolder{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#table1{
+  background-color: lightgrey;
+}
