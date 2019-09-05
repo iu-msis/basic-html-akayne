@@ -32,52 +32,58 @@
   <div class="container">
     <div class="table-responsive">
       <div id="table1">
-      <table  id= "table1" class="table table-striped">
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Year Published</th>
-          <th>Publisher</th>
-          <th>Page Count</th>
-          <th>MSRP</th>
-        </tr>
-        <tr>
-          <td>Harry Potter</td>
-          <td>J.K Rowling</td>
-          <td>08/09/2012</td>
-          <td>340</td>
-          <td>$17.99</td>
+        <div class="row">
+          <table id="taskTable"  class="table table-striped">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year Published</th>
+                <th>Publisher</th>
+                <th>Page Count</th>
+                <th>MSRP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Harry Potter</td>
+                <td>J.K Rowling</td>
+                <td>08/09/2012</td>
+                <td>340</td>
+                <td>$17.99</td>
 
-        </tr>
-        <tr>
-          <td>Green Eggs and Ham</td>
-          <td>Dr. Seuss</td>
-          <td>08/09/2001</td>
-          <td>10</td>
-          <td>$8.99</td>
-        </tr>
-        <tr>
-          <td>Cat in the Hat</td>
-          <td>Dr. Seuss</td>
-          <td>10/10/2013</td>
-          <td>8</td>
-          <td>$7.99</td>
-        </tr>
-        <tr>
-          <td>1 Fish, 2 Fish, Red Fish, Blue Fish</td>
-          <td>Dr. Seuss</td>
-          <td>01/01/2009</td>
-          <td>11</td>
-          <td>$10.99</td>
-        </tr>
-        <tr>
-          <td>Hop on Pop</td>
-          <td>Dr. Seuss</td>
-          <td>12/29/2015</td>
-          <td>13</td>
-          <td>$12.99</td>
-        </tr>
-      </table>
+              </tr>
+              <tr>
+                <td>Green Eggs and Ham</td>
+                <td>Dr. Seuss</td>
+                <td>08/09/2001</td>
+                <td>10</td>
+                <td>$8.99</td>
+              </tr>
+              <tr>
+                <td>Cat in the Hat</td>
+                <td>Dr. Seuss</td>
+                <td>10/10/2013</td>
+                <td>8</td>
+                <td>$7.99</td>
+              </tr>
+              <tr>
+                <td>1 Fish, 2 Fish, Red Fish, Blue Fish</td>
+                <td>Dr. Seuss</td>
+                <td>01/01/2009</td>
+                <td>11</td>
+                <td>$10.99</td>
+              </tr>
+              <tr>
+                <td>Hop on Pop</td>
+                <td>Dr. Seuss</td>
+                <td>12/29/2015</td>
+                <td>13</td>
+                <td>$12.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -90,6 +96,7 @@
         <label for="inputtitle">Title</label>
         <input type="title" class="form-control" id="inputtitle" placeholder="Fox in Socks">
       </div>
+    </div>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputAuthor">Author</label>
@@ -104,7 +111,7 @@
       <label for="inputlength">Number of Pages</label>
       <input type="number" class="form-control" id="inputlength" min="1" >
     </div>
-    <div class="form-row">
+  <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputCost">Cost of Book</label>
         <input type="number" class="form-control" id="inputcost" min="1" step="any">
@@ -115,5 +122,9 @@
 
 </div>
 
+<script src="js/tablesort.min.js"></script>
+<scrip>
+    new Tablesort(document.getElementById('taskTable'));
+</script>
 </body>
 </html>
