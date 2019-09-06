@@ -124,10 +124,21 @@
   </form>
 
   </div>
-
+<!--this code is from the video we had to watch and http://tristen.ca/tablesort/demo/ -->
 <script src="js/tablesort.min.js"></script>
 <script>
   new Tablesort(document.getElementById('taskTable'));
+  var table = document.getElementById('table-id');
+  var sort = new Tablesort(table);
+
+  table.addEventListener('beforeSort', function() {
+    alert('Table is about to be sorted!');
+  });
+
+  table.addEventListener('afterSort', function() {
+    alert('Table sorted!');
+  });
+
 </script>
 </body>
 </html>
