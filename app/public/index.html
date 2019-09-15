@@ -1,4 +1,4 @@
-
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,32 +8,14 @@
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+
 
   <div class="container">
     <div class="row">
-      <div id="patientWaitingApp" >
-
+      <div id="patientWaitingApp">
           {{people.name.first}}
-          {{ people.name.last }}
+
+        {{ people.name.last }}
           <br>
           {{ people.dob.age }}
           {{ people.dob.date }}
@@ -44,7 +26,7 @@
           <br>
           {{ people.email }}
           <br>
-
+-->
 <!--        <div class="people"
          v-for="person in people">
 
@@ -62,7 +44,7 @@
           {{ person.email }}
           <br>
           {{ person.name.last }}
-          -->
+
 
         </div>
       </div>
@@ -73,7 +55,9 @@
 </body>
 </html>
 
-<!--<!DOCTYPE html>
+-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -100,10 +84,21 @@
 
     </div>
   <div class="container">
+    <h3> Who am I?</h3>
 
     <div class="row">
+      <div class="container">
+        <div class="row">
+          <div id="patientWaitingApp">
+            <p> My name is:  {{people.name.first}} {{people.name.last}}</p>
+            <p> I am from {{people.location.street}}  {{people.location.city}}, {{people.location.state}}  {{people.location.postcode}} {{people.nat}}</p>
+            <p> My birthday is {{people.dob.date}}, making me {{people.dob.age}} years old</p>
+            <p> My email is {{people.email}} </p>
+            <img v-bind:src="people.picture.large" alt="picture"/>
 
-      <div id="patientWaitingApp" class="col-md-4 queueView">
+
+
+<!--      <div id="patientWaitingApp" class="col-md-4 queueView">
         {{ patient.name.last }}
         {{ patient.name.first }}
         <div class="patientWaiting patient"
@@ -114,15 +109,13 @@
           {{ patient.name.last }}
         </div>
       </div>
-
+-->
 
   </div>
   <hr>
 
   <br/>
   <div class="container">
-    <a target="_blank" href="img/ella_newman.jpg">
-    <img src="img/ella_newman.jpg" alt="picture of me" class="img-thumbnail" class="img-rounded"/>
     </a>
   </div>
   <br/>
@@ -135,23 +128,16 @@
 
 
 
-
-  <h3> Who am I?</h3>
-  <p>To give you a brief explaination of myself I am a student at Michigan State University. Go Spartans!</p>
-
-  <p>I am orginally from a small town in Ohio called New Holland. If you live under a rock, Ohio is located in the United States of America. There's not much to do in New Holland that's why I decided to go to a Big 10 school. A chance to meet a lot of new people and explore a new state. </p>
+<br>
   <a target="_blank" href="img/ohio.png">
 
   <img src="img/ohio.png" alt="ohio" class="img-thumbnail"/>
   </a>
-  <p>This is a big year for me... the long awaited year of turning <b>21</b>! If you were unsure of my birthday and wanted to send me a gift or 2 it is: October 24th, 1998. The days of being 20 years old are almost over and I am ready for some <i>fun</i>.</p>
 
-  <p> Got any questions for me or just want to email me saying happy birthday, you can reach me with my <a href="mailto:ella.newman@example.com">email</a>. </p>
-  <p> Keep me in the loop. See ya later h8ters.</p>
 
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/random.js"></script>
 </body>
-</html> -->
+</html>

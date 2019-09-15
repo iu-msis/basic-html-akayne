@@ -1,9 +1,36 @@
 var waitingApp = new Vue({
   el: '#patientWaitingApp',
   data: {
-    people:
-    []
+    "people":{
 
+       "name": {
+         "first": "",
+         "last": ""
+       },
+       "location": {
+         "street": "",
+         "city": "",
+         "state": "",
+         "postcode": ""
+
+         },
+
+       "email": "",
+
+       "dob": {
+         "date": "",
+         "age": ""
+       },
+
+       "picture": {
+         "large": "",
+         "medium": "",
+        "thumbnail": ""
+
+       },
+       "nat": ""
+
+   }
   },
   methods: {
     fetchPeople() {
@@ -16,7 +43,7 @@ var waitingApp = new Vue({
 
     }
   },
-  created() {
+  created: function() {
     this.fetchPeople();
   }
 
