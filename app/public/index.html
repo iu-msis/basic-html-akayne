@@ -32,6 +32,8 @@
     <div class="row">
       <div class="container">
         <div class="row">
+          <form @submit.prevent="fetchPeople">
+
           <div id="patientWaitingApp">
             <p> My name is:  {{people.name.first}} {{people.name.last}}</p>
             <p> I am from {{people.location.street}}  {{people.location.city}}, {{people.location.state}}  {{people.location.postcode}} {{people.nat}}</p>
@@ -41,9 +43,14 @@
 
 
 
-
-
-  </div>
+            <br><br>
+            <button  class="btn btn-primary" type="submit" >Refresh Data</button>
+            <!--<button  class="btn btn-primary" v-on:click.once="fetchPeople">Refresh Data</button>
+            -->
+          </div>
+        </form>
+        </div>
+      </div>
   <hr>
 
   <br/>
