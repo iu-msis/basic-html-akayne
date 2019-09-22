@@ -39,7 +39,7 @@
             <p> My name is:  {{people.name.first}} {{people.name.last}}</p>
             <p> I am from {{people.location.street}}  {{people.location.city}}, {{people.location.state}}  {{people.location.postcode}} {{people.nat}}</p>
             <p> My birthday is {{people.dob.date}}, making me {{people.dob.age}} years old</p>
-            <p> My email is {{people.email}} </p>
+            <p> My email is <a :href ="`mailto:${people.email}`">{{people.email}} </a></p>
             <img v-bind:src="people.picture.large" alt="picture"/>
 
 
